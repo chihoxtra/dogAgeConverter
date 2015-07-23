@@ -9,15 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var textfFieldDogAge: UITextField!
     
     @IBOutlet weak var labelDogAge: UILabel!
     
+    @IBOutlet weak var errorMessage: UILabel!
+    
+
+    @IBOutlet weak var humanAgeTextField: UITextField!
+    
+    let dogAgeConversionFactor = 7.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loa ding the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,6 +30,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonCalculate(sender: UIButton) {
+        
+        var dogAgeDouble = Double((humanAgeTextField.text as NSString).doubleValue)
+        
+        if (dogAgeDouble == 0) && (humanAgeTextField.text != "0") {
+            errorMessage.text = "Please enter numbers only"
+            errorMessage.hidden = false
+        } else {
+            dogAgeDouble /= dogAgeConversionFactor
+            errorMessage.hidden =  true
+            labelDogAge.text = "Dog age is: " + "\(dogAgeDouble)"
+            labelDogAge.hidden = false
+            humanAgeTextField.resignFirstResponder()
+        }
+        
+        
     }
 
 }

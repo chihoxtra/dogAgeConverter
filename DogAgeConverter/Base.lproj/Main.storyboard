@@ -22,14 +22,6 @@
                                     <rect key="frame" x="0.0" y="245" width="355" height="347"/>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Please enter dog age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tZx-2L-ZRP">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="45" width="234" height="54"/>
-                                </variation>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lij-7i-paQ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.73813468739999999" blue="0.21195985649999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,43 +31,63 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="283" y="45" width="91" height="54"/>
+                                    <rect key="frame" x="287" y="45" width="87" height="35"/>
                                 </variation>
                                 <connections>
                                     <action selector="buttonCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5cS-oZ-yZ0"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="humanAge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-K6-oaJ">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="errorMessage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKv-wT-eAN">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="102" width="234" height="21"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dogAge" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs2-K6-oaJ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="113" width="124" height="52"/>
+                                    <rect key="frame" x="16" y="121" width="349" height="52"/>
                                 </variation>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter human age" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bQh-Mj-WXe">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="45" width="254" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="zpR-jm-fG1"/>
-                                <exclude reference="tZx-2L-ZRP"/>
                                 <exclude reference="Lij-7i-paQ"/>
+                                <exclude reference="MKv-wT-eAN"/>
                                 <exclude reference="cs2-K6-oaJ"/>
+                                <exclude reference="bQh-Mj-WXe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="zpR-jm-fG1"/>
-                                <include reference="tZx-2L-ZRP"/>
                                 <include reference="Lij-7i-paQ"/>
+                                <include reference="MKv-wT-eAN"/>
                                 <include reference="cs2-K6-oaJ"/>
+                                <include reference="bQh-Mj-WXe"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="errorMessage" destination="MKv-wT-eAN" id="Pd2-bf-JdJ"/>
+                        <outlet property="humanAgeTextField" destination="bQh-Mj-WXe" id="0w8-3D-oAS"/>
                         <outlet property="labelDogAge" destination="cs2-K6-oaJ" id="l8h-Mf-zBO"/>
-                        <outlet property="textfFieldDogAge" destination="tZx-2L-ZRP" id="WBR-y6-qdR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
