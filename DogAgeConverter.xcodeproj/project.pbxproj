@@ -13,6 +13,7 @@
 		7EDF8BCB1B60D50F00F22BDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EDF8BCA1B60D50F00F22BDE /* Images.xcassets */; };
 		7EDF8BCE1B60D50F00F22BDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EDF8BCC1B60D50F00F22BDE /* LaunchScreen.xib */; };
 		7EDF8BDA1B60D51000F22BDE /* DogAgeConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDF8BD91B60D51000F22BDE /* DogAgeConverterTests.swift */; };
+		7EDF8BE41B60D6A700F22BDE /* AgeOfLaika.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EDF8BE31B60D6A700F22BDE /* AgeOfLaika.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		7EDF8BD31B60D50F00F22BDE /* DogAgeConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogAgeConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDF8BD81B60D51000F22BDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EDF8BD91B60D51000F22BDE /* DogAgeConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAgeConverterTests.swift; sourceTree = "<group>"; };
+		7EDF8BE31B60D6A700F22BDE /* AgeOfLaika.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AgeOfLaika.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				7EDF8BC51B60D50F00F22BDE /* ViewController.swift */,
 				7EDF8BC71B60D50F00F22BDE /* Main.storyboard */,
 				7EDF8BCA1B60D50F00F22BDE /* Images.xcassets */,
+				7EDF8BE31B60D6A700F22BDE /* AgeOfLaika.jpg */,
 				7EDF8BCC1B60D50F00F22BDE /* LaunchScreen.xib */,
 				7EDF8BC11B60D50F00F22BDE /* Supporting Files */,
 			);
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EDF8BC91B60D50F00F22BDE /* Main.storyboard in Resources */,
+				7EDF8BE41B60D6A700F22BDE /* AgeOfLaika.jpg in Resources */,
 				7EDF8BCE1B60D50F00F22BDE /* LaunchScreen.xib in Resources */,
 				7EDF8BCB1B60D50F00F22BDE /* Images.xcassets in Resources */,
 			);
@@ -411,6 +415,7 @@
 				7EDF8BDF1B60D51000F22BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EDF8BE01B60D51000F22BDE /* Build configuration list for PBXNativeTarget "DogAgeConverterTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				7EDF8BE21B60D51000F22BDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
